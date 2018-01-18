@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title="RealTimeWebChat"
+    script(src='/chat.js')
+    script(src='/socket.io/socket.io.js')
+  body
+    center
+      h1 Welcome to Real Time Web Chat!
+      #content(style='width:500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+      .controls
+        input#sender(style='width: 100px', placeholder='Enter your name')
+        input#field(style='width:350px; margin: 5px', placeholder='Enter your message')
+        input#send(type='button', value='Send')
